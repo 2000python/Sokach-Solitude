@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box
+}
+*:before,*:after {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table; 
+  }
+.clearfix:after {
+    clear:both;
+  }
+.clearfix {
+     *zoom:1;
+  }
+  a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.nav {
+    height: 160px;
+    background-color: rgb(247, 247, 247);
+    border-bottom: 10px solid rgb(20, 207, 173);
+}
+.nav_icon {
+    float: left;
+    margin-left: 100px;
+    line-height: 160px;
+    font-family: 'FontAwesome'!important;
+    font-size: 80px;
+    color: #000;
+}
+.nav_icon a {
+    color: #000;
+    transition: all 0.1s; 
+}
+.nav_icon a:hover {
+    color: rgb(20, 207, 173);;
+}
+.nav_item {
+    float: right;
+    margin-right: 120px;
+    line-height: 160px;
+    font-size: 25px;
+    font-weight: 800;
+    color: #000;
+}
+.search_box {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.search {
+    display: block;
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    color: #000;
+    line-height: 100px;
+    border-bottom: 1px solid #ccc;
+}
+.main-box_search {
+    display: block;
+    width: 90%; 
+    overflow: hidden; 
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.main-box_search::after {
+    clear: both;
+}
+.main-box_search ul {
+    display: block;
+}
+.main-box_search ul li {
+    float: left;
+    width: 23.5%;
+    height: 225px;
+    margin: 0 9px 20px 9px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: all 0.4;
+    /* box-shadow: 0px 2px 3px 3px rgba(0,0,0,0.1) ; */
+}
+.main-box_search ul li:hover {
+    box-shadow: 0 30px 28px -16px rgba(20, 207, 173, 0.26);
+    transform: translate(0, -4px);
+    transition: all 0.4;
+}
+.main-box_search ul li a {
+    display: block;
+    width: 100%;
+    height: 65%;
+    text-align: center;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+#d1 {
+    width: 80px;
+    height: 80px;
+    margin-top: 13%;
+    /* margin-top: 15%;
+    margin-left: 37%; */
+    transition: all .4s;
+}
+#text_item {
+    display:inline-block;
+    font-family: '微软雅黑';
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+#text_min {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 6px;
+    color: #ccc;
+
+}
+#text_tiqu {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: rgb(20, 207, 173);
+}
+#d1:hover {
+    /* transform: scale(1.5) rotateZ(40deg); */
+    transform: rotateZ(40deg) scale(1.3);
+}
+.charm_box {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 50px;
+}
+.charm {
+    display: block;
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 100px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+footer {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border-top: 10px solid rgb(20, 207, 173);
+}
+.left-box font {
+    display: block;
+    margin-top: 30px;
+    margin-left: 15%;
+    font-family: 'FontAwesome';
+    font-size: 80px;
+}
+.left-box span {
+    display: block;
+    margin-top: 20px;
+    margin-left: 15%;
+    line-height: 30px;
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+}
+#ed {
+    display: block;
+    color: rgb(102, 102, 102);
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
