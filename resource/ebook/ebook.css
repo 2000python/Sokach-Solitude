@@ -1,63 +1,77 @@
 @font-face {
     font-family: 'FontAwesome';
-    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    src: url('../../../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../../../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../../../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../../../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../../../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../../../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-body {font-family: "Microsoft YaHei",'FontAwesome' !important;}
-@keyframes fadeIn {
-	0% {
-	opacity:0;
-	-webkit-animation-timing-function:cubic-bezier(0.3,0,0,1);
-	animation-timing-function:cubic-bezier(0.3,0,0,1)
-        }
-    76.92% {
-    	opacity:1;
-    	-webkit-animation-timing-function:linear;
-    	animation-timing-function:linear
-        }
-    100% {
-    	opacity:1
-        }
-    }
-@keyframes fadeOut {
-	0% {
-	opacity:1;
-	-webkit-animation-timing-function:cubic-bezier(0.3,0,0,1);
-	animation-timing-function:cubic-bezier(0.3,0,0,1)
-    }
-    76.92% {
-	opacity:0.5;
-	-webkit-animation-timing-function:linear;
-	animation-timing-function:linear
-    }
-    100% {
-	opacity:0
-    ww}
+
+body {
+    font-family: "Microsoft YaHei", 'FontAwesome' !important;
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        -webkit-animation-timing-function: cubic-bezier(0.3, 0, 0, 1);
+        animation-timing-function: cubic-bezier(0.3, 0, 0, 1)
+    }
+    76.92% {
+        opacity: 1;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        -webkit-animation-timing-function: cubic-bezier(0.3, 0, 0, 1);
+        animation-timing-function: cubic-bezier(0.3, 0, 0, 1)
+    }
+    76.92% {
+        opacity: 0.5;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear
+    }
+    100% {
+        opacity: 0 ww
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
 }
-*:before,*:after {
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
 }
-.clearfix:before,.clearfix:after {
-    content:"";
-    display:table; 
-  }
+
+.clearfix:before,
 .clearfix:after {
-    clear:both;
-  }
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
 .clearfix {
-     *zoom:1;
-  }
+    *zoom: 1;
+}
+
+
 /* body {
     background-color: #000000 !important;
     font-family: "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -65,22 +79,29 @@ body {font-family: "Microsoft YaHei",'FontAwesome' !important;}
     background-position: center;
     font-size: 14px;
 } */
+
 a {
     text-decoration: none;
 }
+
 li {
     list-style: none;
 }
+
 .w {
     width: 1150px;
     margin-left: auto;
     margin-right: auto;
 }
+
+
 /* 导航栏 */
+
 .nav {
     height: 160px;
     background-color: #fff;
 }
+
 .nav_icon {
     float: left;
     margin-left: 100px;
@@ -89,13 +110,17 @@ li {
     font-size: 80px;
     color: #000;
 }
+
 .nav_icon a {
     color: #000;
-    transition: all 0.1s; 
+    transition: all 0.1s;
 }
+
 .nav_icon a:hover {
-    color: rgb(20, 207, 173);;
+    color: rgb(20, 207, 173);
+    ;
 }
+
 .nav_item {
     float: right;
     margin-right: 120px;
@@ -104,38 +129,49 @@ li {
     font-weight: 800;
     color: #000;
 }
+
+
 /* 功能区 */
+
 .ebook_tech .ebook_tech-box {
     float: left;
     width: 33.2229%;
     height: 233px;
     margin-bottom: 30px;
 }
+
 .ebook_tech-box::after {
     clear: both;
 }
+
+
 /* .ebook_tech .ebook_tech-box::before {
     display: block;
     width: 100%;
     height: 100%;
     background-color: #000;
 } */
+
 .ebook_list {
     width: 95%;
     height: 233px;
 }
+
+
 /* .ebook_list::after {
     display: block;
     width: 100%;
     height: 100%;
     opacity: 1;
 } */
+
 .info {
     display: block;
     width: 100%;
     height: 100%;
-    background-color: rgba(225,225,225,.3); 
+    background-color: rgba(225, 225, 225, .3);
 }
+
 .content {
     display: block;
     width: 100%;
@@ -143,6 +179,7 @@ li {
     transition: all .4;
     border-radius: 10px;
 }
+
 .ebook_list .bg0 {
     background-size: 100% 100%;
     background-image: url(imgs/0.png);
@@ -150,10 +187,12 @@ li {
     background-size: cover;
     opacity: 1;
 }
+
 .bg0:hover {
     background-image: none;
     background-color: rgb(52, 55, 78);
 }
+
 .ebook_list .bg1 {
     background-size: 100% 100%;
     background-image: url(imgs/1.png);
@@ -162,20 +201,24 @@ li {
     background-position-y: -100px;
     opacity: 1;
 }
+
 .bg1:hover {
     background-image: none;
     background-color: rgb(52, 55, 78);
 }
+
 .ebook_list .bg2 {
     background-image: url(imgs/2.png);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 1;
 }
+
 .bg2:hover {
     background-image: none;
     background-color: rgb(52, 55, 78);
 }
+
 .ebook_list .bg3 {
     background-size: 100% 100%;
     background-image: url(imgs/3.png);
@@ -184,10 +227,12 @@ li {
     background-position-y: -100px;
     opacity: 1;
 }
+
 .bg3:hover {
     background-image: none;
     background-color: rgb(52, 55, 78);
 }
+
 .ebook_list .bg4 {
     background-size: 100% 100%;
     background-image: url(imgs/4.png);
@@ -196,10 +241,12 @@ li {
     background-position-y: -150px;
     opacity: 1;
 }
+
 .bg4:hover {
     background-image: none;
     background-color: rgb(52, 55, 78);
 }
+
 .ebook_list .bg5 {
     background-size: 100% 100%;
     background-image: url(imgs/5.png);
@@ -207,10 +254,12 @@ li {
     background-size: cover;
     opacity: 1;
 }
+
 .bg5:hover {
     background-image: none;
     background-color: rgb(52, 55, 78);
 }
+
 .ebook_list .bg6 {
     background-size: 100% 100%;
     background-image: url(imgs/6.png);
@@ -219,10 +268,12 @@ li {
     background-position-y: -150px;
     opacity: 1;
 }
+
 .bg6:hover {
     background-image: none;
     background-color: rgb(52, 55, 78);
 }
+
 .ebook_list .bg7 {
     background-size: 100% 100%;
     background-image: url(imgs/7.png);
@@ -230,10 +281,12 @@ li {
     background-size: cover;
     opacity: 1;
 }
+
 .bg7:hover {
     background-image: none;
     background-color: rgb(52, 55, 78);
 }
+
 .ebook_list .bg8 {
     background-size: 100% 100%;
     background-image: url(imgs/8.png);
@@ -241,10 +294,12 @@ li {
     background-size: cover;
     opacity: 1;
 }
+
 .bg8:hover {
     background-image: none;
     background-color: rgb(52, 55, 78);
 }
+
 .ebook_list .bg9 {
     background-size: 100% 100%;
     background-image: url(imgs/9.png);
@@ -253,10 +308,12 @@ li {
     background-position: center center;
     opacity: 1;
 }
+
 .bg9:hover {
     background-image: none;
     background-color: rgb(52, 55, 78);
 }
+
 .ebook_list .bg10 {
     background-size: 100% 100%;
     background-image: url(imgs/10.png);
@@ -265,10 +322,12 @@ li {
     background-position-y: -150px;
     opacity: 1;
 }
+
 .bg10:hover {
     background-image: none;
     background-color: rgb(52, 55, 78);
 }
+
 .ebook_list .bg11 {
     background-size: 100% 100%;
     background-image: url(imgs/11.png);
@@ -276,10 +335,12 @@ li {
     background-size: cover;
     opacity: 1;
 }
+
 .bg11:hover {
     background-image: none;
     background-color: rgb(52, 55, 78);
 }
+
 #local {
     display: inline-block;
     box-sizing: border-box;
@@ -296,15 +357,16 @@ li {
     color: #000000;
     font-size: 12px;
     text-decoration: none;
-    transition: background 150ms ease-out 0s,border-color 150ms ease-out 0s,color 150ms ease-out 0s,box-shadow 150ms ease-out 0s;
+    transition: background 150ms ease-out 0s, border-color 150ms ease-out 0s, color 150ms ease-out 0s, box-shadow 150ms ease-out 0s;
     vertical-align: top;
 }
+
 #local:hover {
     background: #2affda;
     background-image: -webkit-linear-gradient(50deg, #2affda, #b2ff68) !important;
 }
-#text-x {
 
+#text-x {
     width: 100%;
     text-align: center;
     padding-top: 4%;
@@ -312,12 +374,14 @@ li {
     color: #c5c5c5;
     font-weight: 200;
 }
+
 #text {
     width: 100%;
     text-align: center;
     padding-top: 15%;
     color: #fff;
 }
+
 .copyright {
     width: 100%;
     height: 150px;
@@ -325,4 +389,3 @@ li {
     color: #666;
     line-height: 1.8;
 }
-
