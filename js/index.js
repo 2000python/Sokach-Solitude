@@ -164,7 +164,7 @@ var client = function() {
 
 }();
 
-if (client.system.android === true || client.system.ios === true) {
+if (client.system.android == true || client.system.ios == true) {
     $('link[href*="index.css"]').attr("href", "index_phone.css");
 } else {
     console.log('你的不是手机！');
