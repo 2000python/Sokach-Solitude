@@ -6,7 +6,15 @@
     font-style: normal;
 }
 
-* {
+:root {
+    --xuanzhong-color: rgb(20, 207, 173);
+    --main-font: Helvetica, Arial, sans-serif;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -20,9 +28,9 @@ body {
 }
 
 .w {
-    width: 1180px;
+    width: 90vmax;
     margin: 50px auto;
-    border-radius: 30px;
+    border-radius: 6em;
     background-color: #fff;
 }
 
@@ -80,7 +88,7 @@ body {
 }
 
 .left_box_item span {
-    font-family: 'FontAwesome'!important;
+    font-family: 'FontAwesome';
 }
 
 .left_box_item .cut {
@@ -127,8 +135,8 @@ body {
 /* 主要功能区 */
 
 .main_fun {
-    margin-top: 30px;
-    height: 600px;
+    margin-top: 50px;
+    /* height: 600px; */
     background-color: #fff;
 }
 
@@ -149,16 +157,21 @@ body {
     display: block;
     float: left;
     line-height: 50px;
-    padding-top: 88px;
+    /* padding-top: 88px; */
     width: 100%;
-    height: 212px;
+    height: 100%;
     text-align: center;
     transition: all 0.3s;
     color: #000;
 }
 
+.fun {
+    margin-top: 6em;
+}
+
 .main_fun ul li a:hover {
-    color: rgb(20, 207, 173);
+    color: var(--xuanzhong-color);
+    /* margin-top: 30%; */
     text-decoration: none;
     font-size: 16px;
     background-repeat: no-repeat;
@@ -169,6 +182,11 @@ body {
 .main_fun ul li a span {
     font-family: 'FontAwesome'!important;
     font-size: 50px;
+}
+
+.clearFloat {
+    clear: both;
+    height: 0;
 }
 
 
@@ -261,4 +279,16 @@ body {
     height: 25px;
     margin-left: 50%;
     left: -67.5px;
+}
+
+@media (max-width: 1110px) {
+    .main_fun ul li {
+        width: 49.86%;
+    }
+}
+
+@media (max-width: 865px) {
+    .main_fun ul li {
+        width: 100%;
+    }
 }
