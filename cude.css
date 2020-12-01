@@ -5,54 +5,62 @@
     font-weight: normal;
     font-style: normal;
 }
-* {
+
+*,
+::after,
+::before {
     margin: 0;
     padding: 0;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
 }
-*:before,*:after {
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box
-}
-.clearfix:before,.clearfix:after {
-    content:"";
-    display:table; 
-}
+
+.clearfix:before,
 .clearfix:after {
-    clear:both;
+    content: "";
+    display: table;
 }
+
+.clearfix:after {
+    clear: both;
+}
+
 .clearfix {
-     *zoom:1;
+    *zoom: 1;
 }
+
 a {
     text-decoration: none;
 }
+
 li {
     list-style: none;
 }
+
 .nav-box {
     width: 100%;
     height: 200px;
     border-bottom: 20px solid rgb(20, 207, 173);
-
 }
+
 .left-box {
     float: left;
     height: 200px;
     margin-left: 100px;
 }
-.left-box  a {
+
+.left-box a {
     display: block;
     width: 80px;
     height: 80px;
     padding-top: 65px;
 }
-.left-box  img:hover {
+
+.left-box img:hover {
     transform: scale(1.3);
 }
+
 .left-box img {
     width: 70px;
     height: 70px;
@@ -62,15 +70,16 @@ li {
 .right-box {
     float: right;
     height: 200px;
-
 }
+
 .right-box span {
     float: right;
-    font-family: 'FontAwesome','微软雅黑'!important;
+    font-family: 'FontAwesome', '微软雅黑'!important;
     font-size: 40px;
     margin-right: 100px;
     line-height: 200px;
 }
+
 .banner_cube {
     width: 100%;
     height: 302px;
@@ -79,6 +88,7 @@ li {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
+
 .left-banner {
     float: left;
     width: 50%;
@@ -86,11 +96,13 @@ li {
     background-image: url(img/cube/southeast.jpg);
     transform: rotateZ(180deg);
 }
+
 .right-banner {
     float: right;
     width: 50%;
     height: 300px;
 }
+
 #right_banner-text font {
     display: block;
     width: 100%;
@@ -102,46 +114,57 @@ li {
     color: #000;
     font-weight: 700;
 }
+
 .cube-main {
+    width: 100%;
+}
+
+.cube_main_fun_out {
     width: 90%;
     margin: 0 auto;
-
 }
+
 .cube_item {
     width: 100%;
     height: 30px;
     border-left: 3px solid rgb(20, 207, 173);
     border-radius: 3px;
-    font-size: 30px; 
+    font-size: 30px;
     font-weight: 700;
     line-height: 30px;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
+
 .line-rank {
-    width: 80%;
+    width: 100%;
     height: 60px;
-    margin: 50px auto;
+    margin: 0 auto;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     text-align: center;
 }
+
 .line-rank span {
     font-size: 18px;
     font-family: '微软雅黑'!important;
     text-align: center;
     line-height: 60px;
 }
+
 .three-cube_box {
     width: 40%;
     height: 300px;
     background-color: #000;
     margin: 0 auto;
 }
+
 .three-cube_box_z {
     width: 1040px;
     margin: 30px auto;
     overflow: hidden;
 }
+
 .three-cube_cross {
     position: relative;
     top: 0;
@@ -153,6 +176,7 @@ li {
     margin-right: 5px;
     /* border: 2px solid #cccccc; */
 }
+
 .three-cube_cross a {
     position: absolute;
     display: block;
@@ -162,31 +186,37 @@ li {
     font-size: 18px;
     color: #ccc;
 }
+
 .three-cube_cross span {
     font-size: 18px;
     font-weight: 700;
 }
+
 footer {
     display: block;
     width: 100%;
-    height: 300px;
-    border-top: 10px solid rgb(20, 207, 173);
+    height: 350px;
+    border-top: 13px solid rgb(20, 207, 173);
 }
+
 .left-box font {
     display: block;
-    margin-top: 30px;
-    margin-left: 15%;
+    margin-top: 0.3em;
+    margin-left: 1em;
     font-family: 'FontAwesome';
     font-size: 80px;
 }
+
 .left-box span {
     display: block;
+    width: 100%;
     margin-top: 20px;
     margin-left: 15%;
     line-height: 30px;
     font-size: 14px;
     color: rgb(102, 102, 102);
 }
+
 #ed {
     display: block;
     color: rgb(102, 102, 102);
