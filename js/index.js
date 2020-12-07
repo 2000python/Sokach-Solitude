@@ -165,7 +165,7 @@ var client = function() {
 }();
 
 if (client.system.android == true || client.system.ios == true) {
-    $('link[href*="index.css"]').attr("href", "index_phone.css");
+    alert('你在用手机浏览本页面，请使用电脑以获得较好的浏览体验！')
 } else {
     console.log('你的不是手机！');
 }
