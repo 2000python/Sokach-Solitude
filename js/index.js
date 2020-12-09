@@ -169,3 +169,75 @@ if (client.system.android == true || client.system.ios == true) {
 } else {
     console.log('你的不是手机！');
 }
+
+// $(function imgChange() {
+//     var $img = $('.about_soft');
+//     var $soo_a = $('.soo_item a');
+//     for (var i = 0; i < $soo_a.lenght; i++) {
+//         $soo_a[i].mouseover(function() {
+//             $img.css("display", "block");
+//             $img.css("background-image", "url(img/" + i + ")")
+//         });
+//     }
+//     console.log($soo_a);
+
+// });
+/*
+$(document).ready(function() {
+    let img = $('.about_soft');
+    for (let i = 0; i < 3; i++) {
+        $('.soo_item a').mouseover(function() {
+
+            // img.css("display", "block");
+            img.show();
+            img.css("background-image", "url(img/" + i + ".jpg)");
+        })
+    };
+    for (let i = 0; i < 3; i++) {
+        $('.soo_item a').mouseout(function() {
+
+            img.hide();
+        })
+    };
+    console.log($('.soo_item a'));
+});*/
+
+window.onload = function() {
+    $(function() {
+        let sooHeight = $('.about_soft').css('height');
+        let soo_a = document.querySelectorAll('.soo_item a');
+        let $soo_a = $('.soo_item a');
+        let img1 = document.querySelector('.about_soft');
+        for (let i = 0; i < soo_a.length; i++) {
+            soo_a[i].onmouseover = function(event) {
+                img1.style.display = "block";
+                img1.style.backgroundImage = "url(img/" + i + ".jpg)";
+                img1.style.top = "-" + sooHeight;
+                img1.style.left = document.documentElement.scrollLeft + event.clientX + "px";
+                // img1.style.top = "calc(" + document.documentElement.scrolllTop + event.clientY + "px-" + sooHeight + "+" + "100px" + ")";
+                // img1.style.top = "calc(" + document.documentElement.scrolllTop + event.clientY + "px-" + sooHeight + "+" + "100px" + ")";
+            };
+        };
+        $soo_a.mouseout(function() {
+            img1.style.display = "none";
+        })
+    })
+};
+
+/*
+    let img = document.querySelector('.about_soft');
+    let soo_a = document.querySelectorAll('.soo_item a');
+    const sooHeight = img.style.height;
+    console.log(sooHeight);
+    for (let i = 0; i < soo_a.length; i++) {
+        soo_a[i].onmouseover = function(event) {
+            img.style.display = "block";
+            img.style.backgroundImage = "url(img/" + i + ".jpg)";
+            img.style.left = document.documentElement.scrollLeft + event.clientX + "px";
+            img.style.top = document.documentElement.scrolllTop + event.clientX + "px" + "+" + img.style.height;
+        }
+        soo_a[i].onmouseout = function() {
+            img.style.display = "none";
+        }
+    }
+*/

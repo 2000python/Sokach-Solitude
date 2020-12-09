@@ -1,10 +1,10 @@
-@font-face {
+/* @font-face {
     font-family: 'FontAwesome';
     src: url('fonts/fontawesome-webfont.eot?v=4.7.0');
     src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 :root {
     --xuanzhong-color: rgb(20, 207, 173);
@@ -299,6 +299,14 @@ footer {
     /* background-color: #fff; */
 }
 
+.soo::before {
+    position: absolute;
+    top: 0;
+    width: 9em;
+    height: 9em;
+    background-color: #fff;
+}
+
 .soo a {
     display: block;
     float: left;
@@ -309,11 +317,27 @@ footer {
     text-align: center;
 }
 
+.soo a span {
+    color: #fff;
+    font-size: 1.5em;
+}
+
 .soo .soo_item {
     position: absolute;
     height: 25px;
     margin-left: 50%;
     left: -67.5px;
+}
+
+.about_soft {
+    position: absolute;
+    display: none;
+    /* left: 15em;
+    top: -8em; */
+    width: 6em;
+    height: 6em;
+    background-image: url(img/0.jpg);
+    background-size: cover;
 }
 
 img.injectable {
@@ -323,6 +347,10 @@ img.injectable {
 @media (max-width: 1110px) {
     .main_fun ul li {
         width: 49.86%;
+    }
+    .about_soft {
+        height: 6rem;
+        width: 6rem;
     }
 }
 
@@ -338,5 +366,9 @@ img.injectable {
         height: 200px;
         padding-top: 3em;
         padding-bottom: 3em;
+    }
+    .about_soft {
+        height: 5rem;
+        width: 5rem;
     }
 }
