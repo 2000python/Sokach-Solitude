@@ -89,9 +89,8 @@ li {
 }
 
 .w {
-    width: 1180px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 85vmax;
+    margin: 0 auto;
 }
 
 
@@ -135,13 +134,16 @@ li {
 
 .ebook_tech .ebook_tech-box {
     float: left;
-    width: 33.2229%;
+    width: 33.3333%;
     height: 233px;
     margin-bottom: 30px;
 }
 
-.ebook_tech-box::after {
+.ebook_tech::after {
+    display: block;
     clear: both;
+    content: "";
+    height: 0;
 }
 
 
@@ -153,8 +155,9 @@ li {
 } */
 
 .ebook_list {
-    width: 95%;
+    width: 90%;
     height: 233px;
+    margin: 0 auto;
 }
 
 
@@ -172,173 +175,16 @@ li {
     background-color: rgba(225, 225, 225, .3);
 }
 
-.content {
+.ebook_list .info .content {
     display: block;
     width: 100%;
     height: 100%;
     transition: all .4;
     border-radius: 10px;
-}
-
-.ebook_list .bg0 {
     background-size: 100% 100%;
-    background-image: url(imgs/0.png);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 1;
-}
-
-.bg0:hover {
-    background-image: none;
-    background-color: rgb(52, 55, 78);
-}
-
-.ebook_list .bg1 {
-    background-size: 100% 100%;
-    background-image: url(imgs/1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -100px;
-    opacity: 1;
-}
-
-.bg1:hover {
-    background-image: none;
-    background-color: rgb(52, 55, 78);
-}
-
-.ebook_list .bg2 {
-    background-image: url(imgs/2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 1;
-}
-
-.bg2:hover {
-    background-image: none;
-    background-color: rgb(52, 55, 78);
-}
-
-.ebook_list .bg3 {
-    background-size: 100% 100%;
-    background-image: url(imgs/3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -100px;
-    opacity: 1;
-}
-
-.bg3:hover {
-    background-image: none;
-    background-color: rgb(52, 55, 78);
-}
-
-.ebook_list .bg4 {
-    background-size: 100% 100%;
-    background-image: url(imgs/4.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -150px;
-    opacity: 1;
-}
-
-.bg4:hover {
-    background-image: none;
-    background-color: rgb(52, 55, 78);
-}
-
-.ebook_list .bg5 {
-    background-size: 100% 100%;
-    background-image: url(imgs/5.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 1;
-}
-
-.bg5:hover {
-    background-image: none;
-    background-color: rgb(52, 55, 78);
-}
-
-.ebook_list .bg6 {
-    background-size: 100% 100%;
-    background-image: url(imgs/6.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -150px;
-    opacity: 1;
-}
-
-.bg6:hover {
-    background-image: none;
-    background-color: rgb(52, 55, 78);
-}
-
-.ebook_list .bg7 {
-    background-size: 100% 100%;
-    background-image: url(imgs/7.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 1;
-}
-
-.bg7:hover {
-    background-image: none;
-    background-color: rgb(52, 55, 78);
-}
-
-.ebook_list .bg8 {
-    background-size: 100% 100%;
-    background-image: url(imgs/8.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 1;
-}
-
-.bg8:hover {
-    background-image: none;
-    background-color: rgb(52, 55, 78);
-}
-
-.ebook_list .bg9 {
-    background-size: 100% 100%;
-    background-image: url(imgs/9.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: 1;
-}
-
-.bg9:hover {
-    background-image: none;
-    background-color: rgb(52, 55, 78);
-}
-
-.ebook_list .bg10 {
-    background-size: 100% 100%;
-    background-image: url(imgs/10.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -150px;
-    opacity: 1;
-}
-
-.bg10:hover {
-    background-image: none;
-    background-color: rgb(52, 55, 78);
-}
-
-.ebook_list .bg11 {
-    background-size: 100% 100%;
-    background-image: url(imgs/11.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 1;
-}
-
-.bg11:hover {
-    background-image: none;
-    background-color: rgb(52, 55, 78);
 }
 
 #local {
@@ -384,8 +230,10 @@ li {
 
 .copyright {
     width: 100%;
-    height: 150px;
+    height: 18rem;
     text-align: center;
     color: #666;
     line-height: 1.8;
+    background-color: black;
+    padding-top: 5em;
 }

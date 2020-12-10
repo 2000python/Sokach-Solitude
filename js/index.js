@@ -212,7 +212,7 @@ window.onload = function() {
             soo_a[i].onmouseover = function(event) {
                 img1.style.display = "block";
                 img1.style.backgroundImage = "url(img/" + i + ".jpg)";
-                img1.style.top = "-" + sooHeight;
+                img1.style.top = "-" + sooHeight; //top应该为负值，.about_soft的父盒子是.soo_item而不是body。
                 img1.style.left = document.documentElement.scrollLeft + event.clientX + "px";
                 // img1.style.top = "calc(" + document.documentElement.scrolllTop + event.clientY + "px-" + sooHeight + "+" + "100px" + ")";
                 // img1.style.top = "calc(" + document.documentElement.scrolllTop + event.clientY + "px-" + sooHeight + "+" + "100px" + ")";
@@ -225,6 +225,7 @@ window.onload = function() {
 };
 
 /*
+window.onload = function() {
     let img = document.querySelector('.about_soft');
     let soo_a = document.querySelectorAll('.soo_item a');
     const sooHeight = img.style.height;
@@ -235,9 +236,11 @@ window.onload = function() {
             img.style.backgroundImage = "url(img/" + i + ".jpg)";
             img.style.left = document.documentElement.scrollLeft + event.clientX + "px";
             img.style.top = document.documentElement.scrolllTop + event.clientX + "px" + "+" + img.style.height;
+            //top应该为负值，.about_soft的父盒子是.soo_item而不是body。
         }
         soo_a[i].onmouseout = function() {
             img.style.display = "none";
         }
     }
+}
 */
