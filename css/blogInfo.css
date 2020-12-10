@@ -1,0 +1,20 @@
+:root {}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.bgi {
+    width: 1vw;
+    height: 1vh;
+}
+
+.bgi .aa {
+    width: 1vw;
+    height: 1vh;
+    background-image: url(img/blog首开页面.gif);
+    background-position: center center;
+    background-size: cover;
+}
