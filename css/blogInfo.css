@@ -1,4 +1,7 @@
-:root {}
+:root {
+    --pink-color: rgb(238, 208, 210);
+    --blue-color: rgb(187, 208, 229);
+}
 
 * {
     box-sizing: border-box;
@@ -7,14 +10,20 @@
 }
 
 .bgi {
-    width: 1vw;
-    height: 1vh;
+    width: 100vw;
+    height: 100vh;
 }
 
 .bgi .aa {
-    width: 1vw;
-    height: 1vh;
-    background-image: url(img/blog首开页面.gif);
-    background-position: center center;
-    background-size: cover;
+    float: left;
+    width: 60vw;
+    height: 100vh;
+    background-color: var(--pink-color);
+}
+
+.blog_item {
+    float: right;
+    width: 40vw;
+    height: 100vh;
+    background-color: var(--blue-color);
 }
