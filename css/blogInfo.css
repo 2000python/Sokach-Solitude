@@ -1,9 +1,25 @@
 :root {
-    --pink-color: rgb(238, 208, 210);
-    --blue-color: rgb(187, 208, 229);
-    --green-color: rgb(0, 16, 11);
-    --hh-color: rgb(218, 223, 225);
-    --lin-color: rgb(199, 206, 209);
+    --h-bgh-color: rgb(40, 44, 52);
+    --h-first-bg-color: rgb(46, 50, 56);
+    --h-second-bg-color: rgb(39, 42, 48);
+    --h-fun-bg-color: rgb(32, 35, 39);
+    --h-font-color: rgb(123, 126, 132);
+    --a-bgh-color: rgb(255, 255, 255);
+    --a-first-bg-color: rgb(233, 235, 237);
+    --a-second-bg-color: rgb(216, 218, 223);
+    --a-fun-bg-color: rgb(233, 235, 237);
+    --a-fun-con-color: rgb(233, 235, 237);
+    --color-0: #E44D26;
+    --color-1: #689F63;
+    --color-2: #264DE4;
+    --color-3: #0769AD;
+    --color-4-0: #8ED6FB;
+    --color-4-1: #1C78C0;
+    --color-5-0: #41B883;
+    --color-5-1: #34495E;
+    --color-6: #61DAFB;
+    --color-7: #CF649A;
+    --color-8: #F5DD1E;
 }
 
 @font-face {
@@ -27,102 +43,92 @@ li {
     list-style: none;
 }
 
-
-/* .bgi {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+.nav {
+    width: 100VW;
+    height: 5rem;
+    background-color: var(--h-first-bg-color);
 }
 
-
-联系方式页
-
-.bgi .aa {
+.left {
     float: left;
-    width: 26vw;
-    height: 100vh;
+    height: 100%;
+    margin-left: 10rem;
+    line-height: 5rem;
+    font-size: 1.6em;
+    font-weight: 600;
     font-family: '筑紫a丸';
-    font-size: 2em;
-    background-color: var(--hh-color);
+    color: aliceblue;
 }
 
-.bgi .aa::before {
-    clear: both;
-    content: "";
-    width: 0;
+.right {
+    float: right;
 }
 
-.content {
-    width: 75%;
+.icon {
+    float: left;
+    width: 4rem;
     height: 4rem;
-    color: black;
-    margin: 0em auto;
-    margin-top: 4em;
-    border-bottom: var(--lin-color) 1px solid;
-    text-align: left;
+}
+
+.icon img {
+    display: inline-block;
+    width: 80%;
+    height: 80%;
+    margin-top: 25%;
 }
 
 .item {
-    width: 75%;
-    height: 60px;
-    font-size: .7em;
-    margin: 0 auto;
-    border-bottom: var(--lin-color) 1px solid;
-    line-height: 60px;
-}
-
-.bgi .aa span {
     float: left;
-    display: block;
-    margin-top: 10em;
 }
 
-.blog_item {
-    float: right;
-    width: 74vw;
-    height: 100vh;
-    background-color: var(--blue-color);
+.md_nav {
+    width: 100%;
+    height: 9rem;
+    background-color: var(--h-second-bg-color);
 }
 
-.item_box {
-    width: 60vw;
-    height: 50vh;
-    background-color: #fff;
-}
-
-.blog_item img {
-    width: 40vw;
-    height: 30vh;
-} */
-
-.w {
-    width: 80vw;
-    height: 110vh;
+.md_gate {
     margin: 0 auto;
-    /* background-color: var(--lin-color); */
-}
-
-.item_blog {
-    width: 100%;
-    height: 70px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.blog_item_b {
-    font-size: 2em;
+    width: calc(100vw - 20rem);
+    height: 30%;
+    color: var(--h-font-color);
     font-family: '筑紫a丸';
-    margin-top: 20px;
+    font-size: small;
+    line-height: calc(9rem*(30/100));
 }
 
-.blog_content {
-    font-size: 1em;
-    color: bisque;
+.md_item {
+    margin: 0 auto;
+    width: calc(100vw - 20rem);
+    height: 70%;
 }
 
-.first_box {
+li>svg {
+    display: block;
+    width: calc(calc(9rem*(70/100))*0.5);
+    height: calc(calc(9rem*(70/100))*0.5);
+    fill: rgb(80, 80, 80);
+    margin: 0 auto;
+    transition: all .3s;
+}
+
+.md_item ul {
+    display: flex;
     width: 100%;
-    height: 1080px;
-    background-image: url(../img/blog-item.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
+}
+
+.md_item ul li {
+    width: 11.1111%;
+    margin-top: 1.5rem;
+}
+
+.function {
+    width: 100vw;
+    height: 1000px;
+    background-color: var(--h-fun-bg-color);
+}
+
+.function .fun_w {
+    display: grid;
+    grid-template-columns: ;
 }
