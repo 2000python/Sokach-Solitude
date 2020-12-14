@@ -22,12 +22,13 @@
     --color-8: #F5DD1E;
 }
 
-@font-face {
+
+/* @font-face {
     font-family: '筑紫a丸';
     src: url('../font/NotoSansCJK-Regular.ttc');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 * {
     box-sizing: border-box;
@@ -56,7 +57,7 @@ li {
     line-height: 5rem;
     font-size: 1.6em;
     font-weight: 600;
-    font-family: '筑紫a丸';
+    font-family: '微软雅黑';
     color: aliceblue;
 }
 
@@ -92,7 +93,7 @@ li {
     width: calc(100vw - 20rem);
     height: 30%;
     color: var(--h-font-color);
-    font-family: '筑紫a丸';
+    font-family: '微软雅黑';
     font-size: small;
     line-height: calc(9rem*(30/100));
 }
@@ -130,5 +131,5 @@ li>svg {
 
 .function .fun_w {
     display: grid;
-    grid-template-columns: ;
+    /* grid-template-columns: ; */
 }
