@@ -110,7 +110,7 @@ li>svg {
     height: calc(calc(9rem*(70/100))*0.5);
     fill: rgb(80, 80, 80);
     margin: 0 auto;
-    transition: all .3s;
+    transition: all .5s;
 }
 
 .md_item ul {

@@ -8,13 +8,13 @@ window.onload = function() {
                 svg[i].style.fill = "var(--color-" + i + ")";
                 if (i == 4) {
                     for (let j = 0; j < 2; j++) {
-                        svg4[j].style.transition = "all .3s";
+                        svg4[j].style.transition = "all .5s";
                         svg4[j].style.fill = "var(--color-4-" + j + ")";
                     }
                 }
                 if (i == 5) {
                     for (let x = 0; x < 2; x++) {
-                        svg5[x].style.transition = "all .3s";
+                        svg5[x].style.transition = "all .5s";
                         svg5[x].style.fill = "var(--color-5-" + x + ")";
                     }
                 }
