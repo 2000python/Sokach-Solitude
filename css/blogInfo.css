@@ -45,7 +45,7 @@ li {
 }
 
 .nav {
-    width: 100VW;
+    width: 100%;
     height: 5rem;
     background-color: var(--h-first-bg-color);
 }
@@ -106,11 +106,13 @@ li {
 
 li>svg {
     display: block;
-    width: calc(calc(9rem*(70/100))*0.5);
-    height: calc(calc(9rem*(70/100))*0.5);
+    width: calc(calc(9rem*(70/100))*0.1);
+    height: calc(calc(9rem*(70/100))*0.1);
     fill: rgb(80, 80, 80);
-    margin: 0 auto;
-    transition: all .5s;
+    margin: 0 25%;
+    border-radius: .5em;
+    /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+    transition: all .8s ease-in-out;
 }
 
 .md_item ul {
@@ -124,7 +126,7 @@ li>svg {
 }
 
 .function {
-    width: 100vw;
+    width: 100%;
     height: 1000px;
     background-color: var(--h-fun-bg-color);
 }
